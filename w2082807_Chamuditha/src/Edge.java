@@ -9,7 +9,7 @@ public class Edge {
     Edge residual;
 
     //parameterized constructor
-    public Edge(int from ,int to  ,int capacity,int flow){
+    public Edge(int from ,int to  ,int capacity){
         this.from = from;
         this.to = to;
         this.capacity = capacity;
