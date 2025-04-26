@@ -20,10 +20,10 @@ public class MaxFlowSolver {
     public int getMaxFlow(Graph graph, int s, int t) {
         int maxFlow = 0;
         while (true) {
-            visited = new boolean[graph.n];
+            visited = new boolean[graph.nodes];
             int flow = dfs(graph, s, t, Integer.MAX_VALUE);
             if (flow == 0) break;
-            System.out.println("Augmented path with flow: " + flow);
+           // System.out.println("Augmented path with flow: " + flow);
             maxFlow += flow;
         }
         return maxFlow;
