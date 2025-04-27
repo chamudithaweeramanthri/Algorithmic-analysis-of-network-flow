@@ -1,8 +1,12 @@
 public class MaxFlowSolver {
+    // store the visited nodes as (true/false)
+    // to avoid visiting the same node again
     private boolean[] visited;
 
     public int dfs(Graph graph, int node, int t, int flow) {
-        if (node == t) return flow;
+        if (node == t){
+            return flow;
+        }
         visited[node] = true;
 
         for (Edge edge : graph.getEdges(node)) {
