@@ -1,14 +1,21 @@
+// Chamuditha Weeramanthri
+// 20230393
+
 public class Main {
     public static void main(String[] args) {
         try {
-            String filePath = "F:\\Algorithmic-analysis-of-network-flow\\ladder_16.txt"; // Make sure this file is in your working directory
+            String filePath = "w2082807_Chamuditha/Benchmark/bridge_1.txt";
             Graph graph = Text.parseFromFile(filePath);
             MaxFlowSolver solver = new MaxFlowSolver();
-            //long startTime = System.currentTimeMillis(); // Start time
+            // Algorithm Start time
+            long startTime = System.nanoTime();
             int maxFlow = solver.getMaxFlow(graph, 0, graph.nodes - 1);
-           // long endTime = System.currentTimeMillis(); // End time
+            // Algorithm End time
+            long endTime = System.nanoTime();
+            // display the maximum flow.
             System.out.println("Maximum Flow: " + maxFlow);
-           // System.out.println("Times goes to complete : "+(endTime - startTime)+" Seconds.");
+            // calculate the total time and display.
+            System.out.println("Total Time Taken : " +((endTime - startTime) / 1e6)+" ms.");
         } catch (Exception e) {
             e.printStackTrace();
         }
