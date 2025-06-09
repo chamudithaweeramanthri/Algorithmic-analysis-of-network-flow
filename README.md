@@ -1,15 +1,11 @@
-Sure! Here's a professional and easy-to-read **GitHub `README.md`** file for your **Maximum Flow (Edmonds-Karp / Ford-Fulkerson Algorithm)** Java project, complete with emojis and sections:
 
----
-
-```markdown
 # 🚀 Maximum Flow Solver using Ford-Fulkerson (Edmonds-Karp) Algorithm
 
 This Java project implements the **Edmonds-Karp algorithm**, a BFS-based version of the Ford-Fulkerson method to compute the maximum flow in a flow network.
 
 📁 Input is read from a `.txt` file containing the graph, and the program outputs the maximum flow and time taken.
 
----
+
 
 ## 📌 Features
 
@@ -19,7 +15,6 @@ This Java project implements the **Edmonds-Karp algorithm**, a BFS-based version
 - ⏱️ Measures execution time in milliseconds
 - 👨‍💻 Modular Object-Oriented Design (OOP concepts used)
 
----
 
 ## 🛠️ Technologies Used
 
@@ -27,7 +22,6 @@ This Java project implements the **Edmonds-Karp algorithm**, a BFS-based version
 - File I/O 📄
 - Object-Oriented Programming 🧱
 
----
 
 ## 📂 Project Structure
 
@@ -49,16 +43,8 @@ Following lines: edges in format → `from to capacity`
 **Example (`bridge_1.txt`)**:
 
 
-6
-0 1 4
-0 4 1
-1 2 2
-1 3 1
-2 3 1
-2 4 1
-3 4 2
-1 5 1
-4 5 4
+![image](https://github.com/user-attachments/assets/3f1c6288-d2d8-4edd-92e1-cab9f8552f6b)
+
 
 
 ## ▶️ How to Run
